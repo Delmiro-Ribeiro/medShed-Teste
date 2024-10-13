@@ -8,6 +8,7 @@ import lombok.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
+import java.time.LocalDateTime;
 
 
 @Entity
@@ -23,10 +24,9 @@ public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    @JsonIgnore
-    private Instant data;
+    private LocalDateTime dataHora;
 
     @Enumerated(EnumType.STRING)
     private StatusServico status;
