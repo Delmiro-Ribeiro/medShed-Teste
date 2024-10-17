@@ -23,7 +23,7 @@ public class Servico implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
     private String descricao;
     private Duration duracao;
     private Double preco;
