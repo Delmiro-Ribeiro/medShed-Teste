@@ -32,15 +32,15 @@ public class Agendamento implements Serializable {
     private StatusServico status;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "id")
     private Cliente cliente;
 
     @ManyToOne
-    @JoinColumn(name = "prestador_id")
+    @JoinColumn(name = "id")
     private PrestadorServico prestadorServico;
 
     @ManyToOne
-    @JoinColumn(name = "servico_id")
+    @JoinColumn(name = "id")
     private Servico servico;
 
 
